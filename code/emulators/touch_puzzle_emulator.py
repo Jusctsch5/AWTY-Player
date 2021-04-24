@@ -1,5 +1,4 @@
-from helpers import content_grabber
-from helpers import image_helper
+
 
 class PuzzlePiece:
     def __init__(self, image):

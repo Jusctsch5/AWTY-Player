@@ -10,7 +10,6 @@ g_default_width_pixels = 640
 g_banner_height_pixels = 21
 g_banner_width_pixels = 640
 
-
 g_border_top_height_pixels = 4
 g_border_bottom_height_pixels = 4
 
@@ -40,7 +39,7 @@ def __crop_banner(source_image, banner_height_pixels, banner_width_pixels):
 
     return result
 
-def ____crop_border(source_image, border_top_height_pixels, border_bottom_height_pixels, border_left_width_pixels, border_right_width_pixels):
+def __crop_border(source_image, border_top_height_pixels, border_bottom_height_pixels, border_left_width_pixels, border_right_width_pixels):
     imgwidth, imgheight = source_image.size
     box = (border_left_width_pixels, 
            border_top_height_pixels, 
@@ -50,6 +49,7 @@ def ____crop_border(source_image, border_top_height_pixels, border_bottom_height
     result = source_image.crop(box)
 
     return result
+
 
 def slice_rectangles(image, height, width):
     iteration = 0
