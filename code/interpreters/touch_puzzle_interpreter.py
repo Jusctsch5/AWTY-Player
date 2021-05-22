@@ -32,6 +32,7 @@ class TouchPuzzleIntepreter:
         dest_piece_x = dest_piece_coord[0]
         dest_piece_y = dest_piece_coord[1]
 
+        print(())
         window_helper.move_piece(source_piece_x * self.touch_puzzle_data.piece_width_pixels,
                                  source_piece_y * self.touch_puzzle_data.piece_height_pixels,
                                  dest_piece_x * self.touch_puzzle_data.piece_width_pixels,
